@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+strong {
+  @apply font-bold;
+}
+
+p a,
+span a {
+  @apply text-rose-500 font-bold;
+}
+
+p a:hover,
+span a:hover {
+  @apply text-rose-400 underline;
+}
+
+::selection {
+  @apply bg-rose-500 text-gray-900;
+}
+
+.shine {
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.2));
+}
+
+.active {
+  @apply text-rose-500;
+}
